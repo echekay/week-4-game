@@ -1,0 +1,14 @@
+body {
+	background-image: url("");
+
+}
+h1 {
+	color: black;
+	font-size: 35px;
+}
+
+#directions {
+	background-color: #ffdab9;
+	color: green;
+	font-size: 25px;
+}

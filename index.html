@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Crystals Collector</title>
+		<link rel="stylesheet" href="assets/css/style.css">
+<!-- 	<link rel="stylesheet" href="assets/css/reset.css"> -->
+
+<!-- 	<script src="https://code.jquery.com/jquery.js"></script> -->
+<!-- 	<script type="text/javascript" src="C:/Users/hongs/Desktop/jquery-3.2.1.min.js"></script> -->
+
 </head>
 <body>
+
+<h1>Crystals Collector</h1>
+
+<div id="directions">
+	<p>
+		You will be given a random number at the start of the game.<br>
+		There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.<br>
+		You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br>
+		The value of each crystal is hidden from you until you click on it.<br>
+		Each time when the game starts, the game will change the values of each crystal.
+	</p>
+</div>
+
+<div id="targetScore"></div>
+
+<div id="scoreboard"></div>
+
+<div id="crystals"></div>
+
+<div id="#">Your total score is:</div>
+
+<div id="userScore"></div>
+
+<script>
+	// alert("Does jQuery work right now?");
+
+	var cars = ["Honda", "Toyota", "Nissan", "Subaru", "Mitsubishi", "Mazda"];
+
+	for (i = 0; i < cars.length; i++) {
+		var newDiv = $("<div>");
+		newDiv = cars.length[i];
+		$("#scoreboard").append(newDiv);
+	}
+	// Figure out why the above loop keeps showing undefined values.
+	// --------------------------------------------
+
+</script>
 	
 </body>
 </html>
