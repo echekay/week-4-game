@@ -4,12 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Crystals Collector</title>
 		<link rel="stylesheet" href="assets/css/style.css">
-<!-- 	<link rel="stylesheet" href="assets/css/reset.css"> -->
   <!-- Added link to the jQuery library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/game.js"></script>
 
-  <!-- Added a link to Bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
 <a href="https://i.ytimg.com/vi/d-ABIIZV3vA/maxresdefault.jpg">
@@ -27,47 +25,26 @@
 	</p>
 </div>
 
-<div id="targetScore">39</div>
+<div id="targetScore"></div>
 
 <div id="scoreBoard">
 	<p>Wins: 0</p>
 	<p>Losses: 0</p>
 </div>
 
-<div id="clear"></div>
+<div id="clear"><button id="button"></button></div>
 
 <div id="crystals">
-	<img src="assets/images/atlantis-the-lost-empire-milo-kida-underwater-crystal.jpg" alt="">
-	<img src="assets/images/Billy-Crystal-.jpg" alt="">
-	<img src="assets/images/final-fantasy-legend-of-the-crystals.jpg" alt="">
-	<img src="assets/images/indiana-jones-crystal-skull.jpg" alt="">
+	<img class="crystal" id="firstCrystal" src="assets/images/atlantis-the-lost-empire-milo-kida-underwater-crystal.jpg" alt="">
+	<img class="crystal" id="secondCrystal" src="assets/images/Billy-Crystal-.jpg" alt="">
+	<img class="crystal" id="thirdCrystal" src="assets/images/final-fantasy-legend-of-the-crystals.jpg" alt="">
+	<img class="crystal" id="fourthCrystal" src="assets/images/indiana-jones-crystal-skull.jpg" alt="">
 </div>
 
 <div id="blueDiv">Your total score is:</div>
 
-<div id="userScore">0</div>
+<div id="userCounter">0</div>
 
-<script>
-
-// As browser window gets run, generate random targetScore.
-// Generate random, differing crystalValues for each image.
-// User has to click on image to find out value of each image.
-// As user clicks each image, it adds onto userScore.
-// If userScore === crystalValues, then they win and update counter and display win message.
-// If userScore >= crystalValues, then they lose. Update the counter and display loss message.
-// The game restarts when they win or lose.
-// There will be a new targetScore and userScore and crystalValues will all go back to 0.
-// --------------------------------------------------------------------------------------------
-// Psuedocode
-
-// First run html before javascript gets run.
-// Generate random targetScore.
-// Generate random differing values for each crystal image.
-// Target all four of those values with variables.
-// Listen for click event for each image
-
-
-</script>
 	
 </body>
 </html>
